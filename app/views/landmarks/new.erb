@@ -1,0 +1,15 @@
+<%unless locals.empty?%>
+  <%=message%>
+<%end%>
+
+<h1>Make A New Landmark</h1>
+<br />
+<br />
+<form action='/landmarks' method='POST'>
+  <label>Name: <input type='text' name='landmark[name]' id='landmark_name' /></label>
+  <br />
+  <label>Year Completed: <input type='text' name='landmark[year_completed]' id='landmark_year_completed' /></label>
+  <br />
+  <br />
+  <input type='submit' value='Create New Landmark'/>
+</form>
